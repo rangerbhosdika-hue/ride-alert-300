@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ride Alert 300</string>
+    <string name="accessibility_description">Reads visible Uber Driver offer text only to detect fares of ₹300 or more. It does not accept or reject rides.</string>
+</resources>

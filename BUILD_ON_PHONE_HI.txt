@@ -1,0 +1,14 @@
+RIDE ALERT 300 — PHONE-ONLY BUILD (GitHub Actions)
+
+1) GitHub par account banao/sign in karo.
+2) New public ya private repository banao, e.g. ride-alert-300.
+3) Is ZIP ke andar ki sab files/folders repository ke root mein upload karo. Hidden .github folder aur uske workflows/android-build.yml ko bhi upload karna zaroori hai.
+4) Repository > Actions tab kholo.
+5) "Build Ride Alert 300 APK" workflow select karo.
+6) "Run workflow" dabao.
+7) Build complete hone par workflow run kholo; Artifacts mein RideAlert300-debug-apk download karo.
+8) ZIP artifact extract karo. app-debug.apk install karo. Android unknown-app install permission maange to browser/file manager ke liye allow karo.
+
+Build requirements: GitHub Actions runner supplies JDK 17, Gradle 8.9 and downloads Android SDK platform/build tools via Android Gradle Plugin.
+
+Important: This builds a debug APK, not a Play Store release. Accessibility service reads only visible text exposed by Uber Driver Accessibility API; Uber may not expose the fare text, so test result is not guaranteed. It never taps Match or accepts/rejects trips.
